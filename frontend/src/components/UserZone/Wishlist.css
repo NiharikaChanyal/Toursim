@@ -1,0 +1,113 @@
+.wishlist-page {
+    background: #f4f7f6;
+    min-height: 100vh;
+    padding: 50px 0;
+}
+
+.wishlist-title {
+    font-weight: 800; 
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.wishlist-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    border: 1px solid transparent;
+    transition: box-shadow 0.3s;
+}
+
+.wish-img-container {
+    position: relative;
+    height: 180px;
+}
+
+.wish-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wish-remove {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wish-info {
+    padding: 15px;
+    text-align: center;
+}
+
+.wish-info h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.price {
+    color: #323335;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Button fix: No jumping */
+.wish-btn {
+    width: 100%;
+    background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    border-radius: 12px;;
+}
+
+.wish-btn:hover {
+    transform: none !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2) !important;
+}
+
+.back-to-dash {
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+.back-to-dash:hover {
+    background: #2d3436;
+    color: white;
+}
+
+
+.empty-state {
+    padding: 100px 0;
+    color: #8a8787;
+}

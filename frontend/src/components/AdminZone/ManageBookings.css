@@ -1,0 +1,45 @@
+.admin-container {
+padding: 20px;
+}
+
+.admin-card {
+    width: 100%;
+    max-width: 1100px;
+}
+
+.top-right-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.custom-admin-table{
+    max-width: 1000px;
+   margin-bottom: 0;
+   margin-right: 100px;
+   padding-right: 100px;
+}
+
+.custom-admin-table th {    
+    padding: 15px;
+    white-space: nowrap;
+}
+
+.back-to-dash {
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    border-radius: 12px;;
+}
+
+.back-to-dash:hover {
+    background: #2d3436;
+    color: white;
+}

@@ -1,0 +1,124 @@
+.registration-page {
+    margin-top: 100px;
+    background-color: #f8f9fa;
+    padding-bottom: 40px; 
+}
+
+.regi-cont {
+    margin-top: 20px; 
+    position: relative;
+}
+
+.reg-hero {
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center; 
+}
+
+ .hero-text h1 {
+    color: azure;
+    font-size: 3rem;
+    font-weight:800;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px whitesmoke; 
+    margin-bottom: 10px;
+}
+.hero-text h3{
+    color: azure;
+    text-shadow: 2px 2px 4px whitesmoke; 
+}
+
+.registration-card {
+    background: white;
+    width: 100%;
+    max-width: 500px; 
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    text-align: left; 
+}
+
+.registration-card label {
+    display: block;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-title {
+    font-weight: 700;
+    font-family: serif;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #43cea2;
+    color: #0f0f0f;
+    display: inline-block;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
+
+/* Radio button text fix */
+.form-check-label {
+    margin-bottom: 0 !important;
+    margin-left: 5px;
+}
+.fix-label{
+    margin-left: 0;
+}
+.btn-reg {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    padding: 12px;
+    font-weight: bolder;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+/* Spinner Overlay Background */
+.loader-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Simple CSS Spinner */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #d4af37; /* Gold color for Lucknow theme */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+.loader-text {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Blur effect when loading */
+.blur {
+    filter: blur(4px);
+    pointer-events: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

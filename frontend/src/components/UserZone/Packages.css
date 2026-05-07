@@ -1,0 +1,174 @@
+
+.packages-container {
+    padding: 40px 10%;
+    background: #f8f9fa;
+    min-height: 68vh;
+}
+
+.packages-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.packages-header h1 {
+    font-weight: 800;
+    color: #2d3436;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.packages-header p {
+    color: #636e72;
+    font-size: 1.1rem;
+}
+
+/* Grid Layout */
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Card Styling */
+.pkg-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.pkg-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.pkg-image-wrapper {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+
+.pkg-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.pkg-card:hover .pkg-image-wrapper img {
+    transform: scale(1.1);
+}
+
+.pkg-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #f1ebeb;
+    color: rgb(36, 33, 33);
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.wishlist-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(255,255,255,0.8);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    color: #d63031;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.wishlist-overlay:hover {
+    background: #d63031;
+    color: white;
+}
+
+/* Content Styling */
+.pkg-content {
+    padding: 20px;
+}
+
+.pkg-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #2d3436;
+    margin-bottom: 10px;
+}
+
+.pkg-desc {
+    font-size: 0.9rem;
+    color: #636e72;
+    height: 60px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.pkg-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.pkg-price {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #383737;
+}
+
+.pkg-duration {
+    font-size: 0.85rem;
+    color: #2b2c2c;
+}
+
+.btn-book-now {
+    width: 100%;
+    padding: 12px;
+    background: #2d3436;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn-book-now:hover {
+    
+    background: #34413e;
+    cursor: pointer;
+}
+
+.back-to-dash {
+    position: fixed;
+    bottom: 30px;
+    left: 10px;
+    /* background: #2d3436;*/
+   background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    border-radius: 12px;;
+}
+
+.back-to-dash:hover {
+    background: #2d3436;
+    color: white;
+}

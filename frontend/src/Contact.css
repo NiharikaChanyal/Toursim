@@ -1,0 +1,59 @@
+.contact-page {
+    padding-top: 60px;
+    padding-bottom: 100px;
+    background-color: #f4f7f6;
+}
+
+.contact-card {
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.contact-header {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+.card-header label{
+    text-align: left;
+}
+
+.custom-input {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+.custom-input:focus {
+    border-color: #43cea2;
+    box-shadow: 0 0 8px rgba(67, 206, 162, 0.2);
+}
+
+.custom-input:hover {
+    border-color: #29b8b0;
+}
+
+.btn_custom {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    font-weight: 300px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 25%;
+
+}
+
+.btn_custom:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(24, 90, 157, 0.3);
+    color: white;
+}
+
+/* Label Styling */
+.form-label  {
+    font-weight: 600;
+    color: #444;
+}
